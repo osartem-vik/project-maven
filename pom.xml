@@ -39,6 +39,12 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>${project.build.directory}/dependency</directory>
+                <targetPath>lib/</targetPath>
+            </resource>
+        </resources>
         <plugins>
             <!-- Usual compilation -->
             <plugin>
